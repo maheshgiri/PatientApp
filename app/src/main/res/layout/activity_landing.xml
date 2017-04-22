@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:scaleType="fitXY"
+        android:src="@drawable/doctors_land_background" />
+
+
+    <ImageView
+        android:id="@+id/imageview_doctorslogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textview_landinginfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview_doctorslogo"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/app_landingintro"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textview_landinginfo"
+        android:layout_alignStart="@+id/textview_landinginfo"
+        android:layout_below="@+id/textview_landinginfo"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="119dp"
+        android:background="@drawable/background_all_corners_round"
+        android:onClick="loginClickHandler"
+        android:text="@string/app_login_buttontext"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_login"
+        android:layout_alignBottom="@+id/button_login"
+        android:layout_marginLeft="61dp"
+        android:layout_marginStart="61dp"
+        android:layout_toEndOf="@+id/button_login"
+        android:layout_toRightOf="@+id/button_login"
+        android:background="@drawable/background_all_corners_round"
+        android:onClick="sigupClickHandler"
+        android:text="@string/app_signtext"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button_connectwithfacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button_login"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/background_all_corners_round"
+        android:onClick="signinwithfacebookClickHandler"
+        android:text="@string/app_fb"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

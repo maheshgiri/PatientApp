@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/bannerImgV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/imageback3" />
+
+    <!--<View
+        android:id="@+id/centerLay"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/schemeNameTxtV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/discountTxtVc"
+            android:layout_alignStart="@+id/discountTxtVc"
+            android:layout_below="@+id/discountTxtVc"
+            android:padding="5dp"
+            android:text="OFF ON PASTA"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/discountTxtVc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

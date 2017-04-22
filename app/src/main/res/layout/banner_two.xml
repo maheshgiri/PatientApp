@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/bannerImgV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/imageback2"
+    />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="3dp"
+   >
+
+        <TextView
+            android:id="@+id/schemeNameTxtV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biryani Magic"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/discountTxtV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/schemeNameTxtV"
+            android:layout_alignStart="@+id/schemeNameTxtV"
+            android:layout_below="@+id/schemeNameTxtV"
+            android:layout_centerHorizontal="true"
+            android:text="80%"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/discountTxtV"
+            android:layout_alignBottom="@+id/discountTxtV"
+            android:layout_toEndOf="@+id/discountTxtV"
+            android:layout_toRightOf="@+id/discountTxtV"
+            android:text=" Off on Alankar Special Biryani"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DoctorsApp</string>
+    <string name="app_landingintro">The Most Promising App For Managing Doctors Data Digitally</string>
+    <string name="app_login_buttontext">Login</string>
+    <string name="app_signtext">Signup</string>
+    <string name="app_fb">Connect with facebook</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>
